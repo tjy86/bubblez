@@ -1,0 +1,10 @@
+<%= form_tag '/scrape', :remote => true do %>
+
+<%= text_field_tag 'url' %>
+<%= submit_tag 'go' %> 
+<% end %>
+
+<%= button_to 'sort','/sort', :remote => true %>
+
+<div id = "text">
+</div>
